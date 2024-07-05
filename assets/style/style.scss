@@ -1,0 +1,155 @@
+body {
+    font-family: "Space Grotesk";
+}
+
+.main-card {
+    .background {
+        position: absolute;
+        z-index: -1;
+        width: 100%; 
+        @media only screen and (max-width: 768px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .cards {
+        text-transform: uppercase;
+        color: #fff;
+        @media only screen and (max-width: 750px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+        }
+        &-item {
+            padding-top: 60px;
+            margin-left: 100px;
+            @media only screen and (max-width: 1025px) {
+                padding-top: 40px;
+                margin-left: 0px;
+            }
+
+            @media only screen and (max-width: 750px) {
+                img {
+                    width: 350px;
+                }
+            }
+
+            &_sec {
+                margin-left: 190px;
+                @media only screen and (max-width: 1025px) {
+                    margin-left: 0px;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    margin-left: 230px;
+                }
+
+                @media only screen and (max-width: 750px) {
+                    margin-left: 0px;
+                }
+            }
+           
+            &-info {
+                @media only screen and (max-width: 750px) {
+                    font-size: 15px;
+                    padding: 0;
+                    img {
+                        width: 50px;
+                    }
+                }
+                position: absolute;
+                top: 0;
+                padding: 150px 30px;
+                font-size: 28px;
+                @media only screen and (max-width: 1025px) {
+                    padding: 130px 30px;
+                }
+                &-second {
+                    position: absolute;
+                    margin-top: -137px;
+                    margin-left: 350px;
+                    @media only screen and (max-width: 750px) {
+                        margin-top: -110px;
+                        margin-left: 280px;
+                    }
+                }
+                &-bottom {
+                    width: 400px;
+                    font-size: 14px;
+                    @media only screen and (max-width: 750px) {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #21092f;
+    text-transform: uppercase;
+    &-info {
+        @media only screen and (max-width: 750px) {
+            input, label {
+                margin-left: 20px;
+                width: 80%;
+            }
+        }
+    }
+
+    .error-input {
+        border: 2px solid #FF7F7F;
+    }
+
+    &-date {
+        input {
+            width: 100px;
+        }
+    }
+
+    .completed-info {
+        &-title {
+            font-size: 28px;
+            color: #21092f;
+        }
+
+        &-ph {
+            font-size: 14px;
+            color: #8F8694;
+        }
+    }
+
+    &-button {
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 50px;
+        }
+        button {
+            @media only screen and (max-width: 750px) {
+                width: 80%;
+            }
+            background-color: #21092f;
+            color: #fff;
+            width: 100%;
+            padding: 15px 0;
+            &:hover {
+                background-color: #ee82ee;
+                color: #fff;
+            }
+         
+        }
+    }
+    
+    .error-msg {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
